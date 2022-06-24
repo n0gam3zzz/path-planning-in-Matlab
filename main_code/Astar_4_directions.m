@@ -57,6 +57,7 @@ while 1
     end
     close = [ close; open( 1, : ) ];
     open( 1, : ) = [  ];
+%     open(1:(4-j), :) = sortrows(open(1:(4-j), :), 3);
     open = sortrows( open, 3 );
 end
 if isnan( close( 1, 1 ) )
